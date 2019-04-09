@@ -90,12 +90,28 @@
                   </div>
 
                   <!-- 自适应大图 -->
-		  <script type="text/javascript"> 
-　　            function resizeImage(obj){ 
-　　            obj.width=obj.width>500&&obj.width>obj.height?500:auto; 
-　　            obj.height=obj.height>900?900:auto; 
-　　            } 
-              </script>
+		 <script>
+ var intrologo = document.getElementById('intrologo');
+ getImgWH ( intrologo );
+ //执行宽高比对并设置img类名
+ function getImgWH ( Obj ) {
+  var img = Obj.getElementsByTagName('img');
+  for( var i=0 ; i<img.length ; i++ ){
+   img[i].onload = function(){
+    var width = this.width;
+    var height = this.height;
+    if ( width > height ) {
+     this.classList.add('height');
+    } else if ( width < height ) {
+     this.classList.add('width');
+    } else {
+     this.style.width = '100%';
+     this.style.height = '100%';
+    }
+   }
+  }
+ }
+</script>
                   <!--<script>
                       var img0 = new Image();
                       var imageTag0 = document.getElementById("carousel-img0");
@@ -117,12 +133,28 @@
                   </div>
 
                   <!-- 自适应大图 -->
-		  <script type="text/javascript"> 
-　　            function resizeImage(obj){ 
-　　            obj.width=obj.width>500&&obj.width>obj.height?500:auto; 
-　　            obj.height=obj.height>900?900:auto; 
-　　            } 
-              </script>
+		 <script>
+ var intrologo = document.getElementById('intrologo');
+ getImgWH ( intrologo );
+ //执行宽高比对并设置img类名
+ function getImgWH ( Obj ) {
+  var img = Obj.getElementsByTagName('img');
+  for( var i=0 ; i<img.length ; i++ ){
+   img[i].onload = function(){
+    var width = this.width;
+    var height = this.height;
+    if ( width > height ) {
+     this.classList.add('height');
+    } else if ( width < height ) {
+     this.classList.add('width');
+    } else {
+     this.style.width = '100%';
+     this.style.height = '100%';
+    }
+   }
+  }
+ }
+</script>
                   <!--<script>
                       var img1 = new Image();
                       var imageTag1 = document.getElementById("carousel-img1");
@@ -144,12 +176,28 @@
                   </div>
 
                   <!-- 自适应大图 -->
-		  <script type="text/javascript"> 
-　　            function resizeImage(obj){ 
-　　            obj.width=obj.width>500&&obj.width>obj.height?500:auto; 
-　　            obj.height=obj.height>900?900:auto; 
-　　            } 
-              </script>
+		 <script>
+ var intrologo = document.getElementById('intrologo');
+ getImgWH ( intrologo );
+ //执行宽高比对并设置img类名
+ function getImgWH ( Obj ) {
+  var img = Obj.getElementsByTagName('img');
+  for( var i=0 ; i<img.length ; i++ ){
+   img[i].onload = function(){
+    var width = this.width;
+    var height = this.height;
+    if ( width > height ) {
+     this.classList.add('height');
+    } else if ( width < height ) {
+     this.classList.add('width');
+    } else {
+     this.style.width = '100%';
+     this.style.height = '100%';
+    }
+   }
+  }
+ }
+</script>
                   <!--<script>
                       var img2 = new Image();
                       var imageTag2 = document.getElementById("carousel-img2");
