@@ -86,11 +86,17 @@
                   
                     <div class="item active">
                   
-                    <img id="carousel-img0" src="/css/images/home-bg.jpg">
+                    <img id="carousel-img0" onload="resizeImage(this)" src="/css/images/home-bg.jpg">
                   </div>
 
                   <!-- 自适应大图 -->
-                  <script>
+		  <script type="text/javascript"> 
+　　            function resizeImage(obj){ 
+　　            obj.width=obj.width>50&&obj.width>obj.height?50:auto; 
+　　            obj.height=obj.height>50?50:auto; 
+　　            } 
+              </script>
+                  <!--<script>
                       var img0 = new Image();
                       var imageTag0 = document.getElementById("carousel-img0");
                       img0.src = imageTag0.src;
@@ -99,7 +105,7 @@
                           imageTag0.style.width = document.body.clientWidth + "px";
                         } else {
                           imageTag0.style.height = document.body.clientHeight + "px";
-                          imageTag0.style.marginLeft = -(document.body.clientHeight * img0.width / img0.height - document.body.clientWidth) / 4+ "px";
+                          imageTag0.style.marginLeft = -(document.body.clientHeight * img0.width / img0.height - document.body.clientWidth) / 2+ "px";
                         }
                       };
                   </script>
@@ -107,11 +113,17 @@
                   
                     <div class="item">
                   
-                    <img id="carousel-img1" src="/css/images/sample.jpg">
+                    <img id="carousel-img1" onload="resizeImage(this)" src="/css/images/sample.jpg">
                   </div>
 
                   <!-- 自适应大图 -->
-                  <script>
+		  <script type="text/javascript"> 
+　　            function resizeImage(obj){ 
+　　            obj.width=obj.width>50&&obj.width>obj.height?50:auto; 
+　　            obj.height=obj.height>50?50:auto; 
+　　            } 
+              </script>
+                  <!--<script>
                       var img1 = new Image();
                       var imageTag1 = document.getElementById("carousel-img1");
                       img1.src = imageTag1.src;
@@ -120,7 +132,7 @@
                           imageTag1.style.width = document.body.clientWidth + "px";
                         } else {
                           imageTag1.style.height = document.body.clientHeight + "px";
-                          imageTag1.style.marginLeft = -(document.body.clientHeight * img1.width / img1.height - document.body.clientWidth) / 4+ "px";
+                          imageTag1.style.marginLeft = -(document.body.clientHeight * img1.width / img1.height - document.body.clientWidth) / 2+ "px";
                         }
                       };
                   </script>
@@ -128,11 +140,17 @@
                   
                     <div class="item">
                   
-                    <img id="carousel-img2" src="https://source.unsplash.com/collection/954550/1920x1080">
+                    <img id="carousel-img2" onload="resizeImage(this)" src="https://source.unsplash.com/collection/954550/1920x1080">
                   </div>
 
                   <!-- 自适应大图 -->
-                  <script>
+		  <script type="text/javascript"> 
+　　            function resizeImage(obj){ 
+　　            obj.width=obj.width>50&&obj.width>obj.height?50:auto; 
+　　            obj.height=obj.height>50?50:auto; 
+　　            } 
+              </script>
+                  <!--<script>
                       var img2 = new Image();
                       var imageTag2 = document.getElementById("carousel-img2");
                       img2.src = imageTag2.src;
@@ -141,12 +159,12 @@
                           imageTag2.style.width = document.body.clientWidth + "px";
                         } else {
                           imageTag2.style.height = document.body.clientHeight + "px";
-                          imageTag2.style.marginLeft = -(document.body.clientHeight * img2.width / img2.height - document.body.clientWidth) / 4+ "px";
+                          imageTag2.style.marginLeft = -(document.body.clientHeight * img2.width / img2.height - document.body.clientWidth) / 2+ "px";
                         }
                       };
                   </script>
                 
-            </div>
+            </div>--!>
 
             <!-- Controls -->
             <a class="left carousel-control" href=".carousel" role="button" data-slide="prev">
@@ -158,7 +176,7 @@
               <span class="sr-only">İleri</span>
             </a>
           </div>
-        </section>
+        </div></section>
         <script>
           $('section.awSlider .carousel').carousel({
               pause: '',
